@@ -71,7 +71,7 @@ function multiplyNums(x, y, cb) {
 
 
 multiplyNums(3, 3, function(product){
-  console.log(product)
+  console.log(product);
 });
 
 // ------------------------------------------------------------------
@@ -79,10 +79,15 @@ multiplyNums(3, 3, function(product){
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  
+  list.filter((item) => {
+    return cb(item === "Pencil");
+  });
+
 }
 
-
+contains("Pencil", items, function(checked_item){
+  console.log(checked_item);
+});
 
 /* STRETCH PROBLEM */
 
