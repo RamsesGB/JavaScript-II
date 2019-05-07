@@ -55,23 +55,34 @@ last(items, function(lastItem){
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  return cb(x * y);
+  return cb(x + y);
 }
 
-sumNums(3, 3, function(product){
-  console.log(product);
-})
+sumNums(3, 3, function(sum){
+  console.log(sum);
+});
 
 // ------------------------------------------------------------------
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
 }
+
+
+multiplyNums(3, 3, function(product){
+  console.log(product)
+});
+
+// ------------------------------------------------------------------
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  
 }
+
+
 
 /* STRETCH PROBLEM */
 
