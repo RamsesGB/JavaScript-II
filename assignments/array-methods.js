@@ -111,7 +111,8 @@ console.log(emailList);
 // Problem 2 Get a list of people that donated 200 or more
 
 let bigDonor = runners.filter((runner) => {
-return runner.donation.sort() >= 200;
+return runner.donation >= 200;
 });
 console.table(bigDonor);
+
 // Problem 3
